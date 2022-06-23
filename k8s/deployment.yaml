@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lirbery
+  name: wherkil
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lirbery
+      app: wherkil
   template:
     metadata:
       labels:
-        app: lirbery
+        app: wherkil
     spec:
       containers:
-      - image: okteto.dev/lirbery:latest
-        name: lirbery
+      - image: okteto.dev/wherkil:latest
+        name: wherkil
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.anime-planet.com"
+          value: "www.anime1st.com"
         - name: Vless_UUID
-          value: "49a2bbda-63cb-4fdb-a0be-155bc59e2090"
+          value: "62c598d2-893b-4aab-a48b-70c9fece07a4"
         - name: Vless_Path
-          value: "/dorjsdeyu"
+          value: "/SRK6DHG"
         - name: Vmess_UUID
-          value: "49a2bbda-63cb-4fdb-a0be-155bc59e2090"
+          value: "62c598d2-893b-4aab-a48b-70c9fece07a4"
         - name: Vmess_Path
-          value: "/cvterofg"
+          value: "/VBUGZXO"
         - name: Share_Path
-          value: "/Share305"
+          value: "/Share427"
