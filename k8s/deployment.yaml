@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: lirbery
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: lirbery
   template:
     metadata:
       labels:
-        app: ray
+        app: lirbery
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/lirbery:latest
+        name: lirbery
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "www.anime-planet.com"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "49a2bbda-63cb-4fdb-a0be-155bc59e2090"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/dorjsdeyu"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "49a2bbda-63cb-4fdb-a0be-155bc59e2090"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/cvterofg"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share305"
