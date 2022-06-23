@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: partment
+  name: pround
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: partment
+      app: pround
   template:
     metadata:
       labels:
-        app: partment
+        app: pround
     spec:
       containers:
-      - image: okteto.dev/partment:latest
-        name: partment
+      - image: okteto.dev/pround:latest
+        name: pround
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "moviesjoy.to"
+          value: "www.plex.tv"
         - name: Vless_UUID
-          value: "825f7d89-a010-4367-8734-b9626bae32bd"
+          value: "ca2e7c42-5180-494b-b56a-8a44751cdf59"
         - name: Vless_Path
-          value: "/rgftuyt"
+          value: "/AEJ5YH"
         - name: Vmess_UUID
-          value: "825f7d89-a010-4367-8734-b9626bae32bd"
+          value: "ca2e7c42-5180-494b-b56a-8a44751cdf59"
         - name: Vmess_Path
-          value: "/oivtef"
+          value: "/KJ46GIF"
         - name: Share_Path
-          value: "/Share320"
+          value: "/Share148"
