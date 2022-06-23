@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cultural
+  name: partment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cultural
+      app: partment
   template:
     metadata:
       labels:
-        app: cultural
+        app: partment
     spec:
       containers:
-      - image: okteto.dev/cultural:latest
-        name: cultural
+      - image: okteto.dev/partment:latest
+        name: partment
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.azmovies.net"
+          value: "moviesjoy.to"
         - name: Vless_UUID
-          value: "3f98bee0-8b53-4850-b70e-dd3cf1347456"
+          value: "825f7d89-a010-4367-8734-b9626bae32bd"
         - name: Vless_Path
-          value: "/xcukasd"
+          value: "/rgftuyt"
         - name: Vmess_UUID
-          value: "3f98bee0-8b53-4850-b70e-dd3cf1347456"
+          value: "825f7d89-a010-4367-8734-b9626bae32bd"
         - name: Vmess_Path
-          value: "/asokrtc"
+          value: "/oivtef"
         - name: Share_Path
-          value: "/Share489"
+          value: "/Share320"
